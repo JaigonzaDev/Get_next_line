@@ -27,8 +27,8 @@
 
 char	*get_next_line(int fd);
 char	*ft_strjoin(char const *s1, char const *s2);
-int		ft_strchr(const char *s, int c);
-size_t	ft_strlen(const char *str);
+int		gnl_strchr(const char *s, int c);
+size_t	gnl_strlen(const char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 char	*initialize_buffer(char *buffer);
 void	ft_read(int fd, char *buf, char **buffer);

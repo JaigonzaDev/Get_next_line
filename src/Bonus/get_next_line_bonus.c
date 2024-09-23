@@ -29,7 +29,7 @@ void	ft_read(int fd, char *buf, char **buffer)
 		temp = ft_strjoin(*buffer, buf);
 		free(*buffer);
 		*buffer = temp;
-		if (ft_strchr(buf, '\n'))
+		if (gnl_strchr(buf, '\n'))
 			break ;
 	}
 }
@@ -95,7 +95,7 @@ char	*ft_next_line(char **buffer)
 		*buffer = NULL;
 		return (NULL);
 	}
-	rest = (char *)malloc((ft_strlen(*buffer) - i + 1) * sizeof(char));
+	rest = (char *)malloc((gnl_strlen(*buffer) - i + 1) * sizeof(char));
 	if (!rest)
 	{
 		free(*buffer);
@@ -103,7 +103,7 @@ char	*ft_next_line(char **buffer)
 		return (NULL);
 	}
 	i++;
-	ft_strlcpy(rest, &((*buffer)[i]), ft_strlen(*buffer) - i + 1);
+	ft_strlcpy(rest, &((*buffer)[i]), gnl_strlen(*buffer) - i + 1);
 	free(*buffer);
 	*buffer = rest;
 	return (*buffer);
