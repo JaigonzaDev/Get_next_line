@@ -28,7 +28,7 @@ void	ft_read(int fd, char *buf, char **buffer)
 		if (readbytes == -1 || readbytes == 0)
 			return ;
 		buf[readbytes] = '\0';
-		temp = ft_strjoin(*buffer, buf);
+		temp = gnl_strjoin(*buffer, buf);
 		free(*buffer);
 		*buffer = NULL;
 		*buffer = temp;

@@ -26,7 +26,7 @@
 # include <unistd.h>
 
 char	*get_next_line(int fd);
-char	*ft_strjoin(char const *s1, char const *s2);
+char	*gnl_strjoin(char const *s1, char const *s2);
 int		gnl_strchr(const char *s, int c);
 size_t	gnl_strlen(const char *str);
 size_t	gnl_strlcpy(char *dst, const char *src, size_t dstsize);
