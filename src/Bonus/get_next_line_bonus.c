@@ -77,7 +77,7 @@ char	*ft_get_line(char *buffer)
 		buffer = NULL;
 		return (NULL);
 	}
-	ft_strlcpy(line, buffer, (i + 1));
+	gnl_strlcpy(line, buffer, (i + 1));
 	return (line);
 }
 
@@ -103,7 +103,7 @@ char	*ft_next_line(char **buffer)
 		return (NULL);
 	}
 	i++;
-	ft_strlcpy(rest, &((*buffer)[i]), gnl_strlen(*buffer) - i + 1);
+	gnl_strlcpy(rest, &((*buffer)[i]), gnl_strlen(*buffer) - i + 1);
 	free(*buffer);
 	*buffer = rest;
 	return (*buffer);

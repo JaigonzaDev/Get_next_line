@@ -64,7 +64,7 @@ int	ft_strchr(const char *s, int c)
 	return (0);
 }
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t	gnl_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	len;
 	size_t	i;
