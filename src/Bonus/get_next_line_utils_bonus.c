@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jaigonza <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jaigonza <jaigonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 16:33:18 by jaigonza          #+#    #+#             */
-/*   Updated: 2024/05/17 16:33:20 by jaigonza         ###   ########.fr       */
+/*   Updated: 2024/10/06 16:07:54 by jaigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ size_t	ft_strlen(const char *str)
 	}
 	return (i);
 }
+
 
 char	*gnl_strjoin(char const *s1, char const *s2)
 {
